@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b8413812.css",
+    "main.js": "/static/js/main.45a5f364.js",
+    "static/media/resumeme.pdf": "/static/media/resumeme.462200e14f04b90c318e.pdf",
+    "static/media/tushitgo.png": "/static/media/tushitgo.e46e5026cba6aacbb236.png",
+    "index.html": "/index.html",
+    "main.b8413812.css.map": "/static/css/main.b8413812.css.map",
+    "main.45a5f364.js.map": "/static/js/main.45a5f364.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8413812.css",
+    "static/js/main.45a5f364.js"
+  ]
+}
