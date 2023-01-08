@@ -1,16 +1,18 @@
 body {
-  margin: 0; 
+  margin: 0;  
   /* background-color: rgb(78, 138, 49);    */  
   /* background-image: url("https://images.pexels.com/photos/4097159/pexels-photo-4097159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: 100% 100%;  */
-  z-index: -3;
-  background-color: white; 
-  font-family: "Audiowide", sans-serif;
+  background-size: 100% 100%;  */  
+  z-index: -3;  
+  background-color: white;  
+  font-family: "Audiowide", sans-serif;  
+  z-index: -10;  
 }
 
 * {
   margin: auto; 
   padding: 0;   
+  background-color: white;  
 }
 
 h1,h2,h3,h4,h5{

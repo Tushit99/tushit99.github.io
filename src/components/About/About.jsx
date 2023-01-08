@@ -63,7 +63,7 @@ const About = () => {
               _hover={{
                 boxShadow: "outline",
               }}
-              onClick={() => {
+              onClick={() => { 
                 handleShowing(
                   "https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing"
                 );
