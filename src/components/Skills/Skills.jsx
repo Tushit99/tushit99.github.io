@@ -12,61 +12,62 @@ import { FaNpm } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
 import { SiChakraui } from 'react-icons/si'
 import { SiNetlify } from 'react-icons/si'
+import { Heading } from '@chakra-ui/react'
+ 
 
 
-
-const Skills = () => {
+const Skills = ({skill}) => { 
     return (
-        <div className={skl.box}>
-            <h1 className={skl.h1}> Skills  </h1>
+        <div  id="skills" ref={skill} className={skl.box}>
+            <Heading as='h2' size='2xl' color={"white"} fontWeight={400}> Tech Stacks </Heading>
             <div className={skl.sklimg}>
-                <div className={skl.box2}>
-                    <SiJavascript size="50px" className={skl.icons} />
-                    <p> Javascript </p>
+                <div id={skl.box2} className="skills-card" >
+                    <SiJavascript size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Javascript </p> 
                 </div>
-                <div className={skl.box2}>
-                    <SiHtml5 size="50px" className={skl.icons} />
-                    <p> HTML 5 </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiHtml5 size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> HTML 5 </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiCss3 size="50px" className={skl.icons} />
-                    <p> CSS 3 </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiCss3 size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> CSS 3 </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiReact size="50px" className={skl.icons} />
-                    <p> React </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiReact size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> React </p>
                 </div>
-                <div className={skl.box2}>
-                    <IoLogoNodejs size="50px" className={skl.icons} />
-                    <p> Node js </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <IoLogoNodejs size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Node js </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiMongodb size="50px" className={skl.icons} />
-                    <p> Mongodb </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiMongodb size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Mongodb </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiExpress size="50px" className={skl.icons} />
-                    <p> Express </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiExpress size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Express </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiRedux size="50px" className={skl.icons} />
-                    <p> Redux </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiRedux size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Redux </p>
                 </div>
-                <div className={skl.box2}>
-                    <FaNpm size="50px" className={skl.icons} />
-                    <p> Npm </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <FaNpm size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Npm </p>
                 </div>
-                <div className={skl.box2}>
-                    <BsGithub size="50px" className={skl.icons} />
-                    <p> Github </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <BsGithub size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Github </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiChakraui size="50px" className={skl.icons} />
-                    <p> Chakra-UI </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiChakraui size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Chakra-UI </p>
                 </div>
-                <div className={skl.box2}>
-                    <SiNetlify size="50px" className={skl.icons} />
-                    <p> Netlify </p>
+                <div id={skl.box2}  className="skills-card" >
+                    <SiNetlify size="50px" className='skills-card-img' id={skl.icons} />
+                    <p className="skills-card-name"> Netlify </p>
                 </div>
             </div>
         </div>

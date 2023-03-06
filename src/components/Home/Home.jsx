@@ -1,30 +1,37 @@
+import { Heading } from "@chakra-ui/react";
 import React from "react";
 import top from "./home.module.css";
 
-const Top = () => {
+const Home = ({ home }) => {
     return (
-        <div className="nav-menu">
+        <div id="home" ref={home} className="nav-menu">
             <div className={top.box}>
-                <h3 className={top.h3}>
-                    Hello  I'm
-                </h3>
-                <h1 className={top.h1}> TUSHIT SAXENA </h1>
+                <Heading as="h4" size="md" fontWeight={400}>
+                    Hello I'm
+                </Heading> 
+                <Heading as="h2" id="user-detail-name" size="2xl" fontWeight={400}>
+                    TUSHIT SAXENA
+                </Heading>
                 <img
-                    src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=4000&pause=1000&color=0003F7&width=435&lines=Full+Stack+MERN+Developer"
-                    alt=""
+                    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=F7F7F7&center=true&vCenter=true&width=435&lines=+Full+Stack+Web+Developer;MERN+Stack"
+                    alt="Typing SVG"
                 />
-                <h4 className={top.h4}>
-                    my name is Tushit Saxena and I am a Full Stack
-                    Developer, passionate about building digital
-                    products that improve everyday experience for
-                    people. I love to work on exciting projects
-                    that test what I've learnt, whilst being
-                    exposed to the power and potential of the
-                    ever-evolving technologies around us.
+                <h4 id="user-detail-intro" className={top.h4}>
+                    I am a Full Stack Developer, passionate about building digital
+                    products that improve everyday experience for people. 
+                    <span> 
+                        I love to work on exciting projects that test what I've learnt,
+                        whilst being exposed to the power and potential of the ever-evolving
+                        technologies around us.
+                    </span>
+                    I have a specialization in developing websites and web applications
+                    using HTML, CSS, JavaScript, React, and Node.js.
                 </h4>
             </div>
         </div>
     );
 };
 
-export default Top;
+export default Home;
+
+

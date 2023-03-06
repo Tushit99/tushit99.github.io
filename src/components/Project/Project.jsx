@@ -6,32 +6,109 @@ import {
   Card,
   CardBody,
   Image,
-  Stack,
   Heading,
   CardFooter,
   Button,
-} from "@chakra-ui/react"; 
-import Img1 from "../ProjectImage/mid.png";
-import Img2 from "../ProjectImage/urban.png";
+  Box,
+  Stack,
+  Badge,
+} from "@chakra-ui/react";
+import herolog from "../hiringHerosimg/helogo.png"
+import jcrew from "../jcrewPictures/jcrew.png";
+import hemain from "../hiringHerosimg/main.png"
+import jc from "../jcrewPictures/jcrewhome.png";
+import mainhero from "../hiringHerosimg/mid.png";
+
+import herocart from "../hiringHerosimg/hecart.png";
+import herofooter from "../hiringHerosimg/herofooter.png";
+import herologin from "../hiringHerosimg/helogin.png";
+import heroPay from "../hiringHerosimg/hepayment.png";
+
+import jcrcart from "../jcrewPictures/cart.png";
+import jchome from "../jcrewPictures/jcrewhome.png";
+import jcmid from "../jcrewPictures/jchome.png";
+import jcpayment from "../jcrewPictures/payment.png";
+import jcsort from "../jcrewPictures/sorting.png";
+import Prodrawer from "../ProjectDrawer.jsx/Prodrawer";
+import Blog from "../Readbox/Blog";
 
 const D1 = [
   {
     id: 1,
-    image: Img1, 
-    title: "Nykaa",
-    github: "https://github.com/Tushit99/nykaa-clone-main",
+    image: hemain,
+    title: "Fiverr",
+    description:
+      "Fiverr is a global online marketplace for freelance services. Fiverr's platform connects freelancers to people or businesses looking to hire. The unique term for a service offered by a seller on Fiverr is called a 'Gig. ",
+    logo: herolog,
+    github: "https://github.com/Tushit99/tedious-advertisement-2369",
+    tec: ["HTML", "CSS", "Javascript"],
     netlify: "https://nykaa-clone20.netlify.app/",
+    fullImg: [
+      { im: mainhero, name: "Home" },
+      { im: herologin, name: "Logo" },
+      { im: herofooter, name: "Footer" },
+      { im: herocart, name: "Cart" },
+      { im: heroPay, name: "Payment" },
+    ],
   },
   {
     id: 2,
-    image: Img2,
-    title: "Urban",
-    github: "https://github.com/Tushit99/-stupendous-addition-3073",
-    netlify: "https://stupendous-addition-3073.netlify.app",
+    image: jc,
+    title: "J.Crew",
+    logo: jcrew,
+    description:
+      "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
+    tec: ["React", "CSS", "Javascript"], 
+    github: "https://github.com/Tushit99/versed-silver-14",
+    netlify: "https://versed-silver-14.netlify.app/",
+    fullImg: [
+      { im: jchome, name: "Home" },
+      { im: jcmid, name: "advertisement" },
+      { im: jcsort, name: "Sort" },
+      { im: jcrcart, name: "Cart" },
+      { im: jcpayment, name: "Payment" },
+    ],
+  },
+  {
+    id: 3,
+    image: hemain,
+    title: "Fiverr",
+    description:
+      "Fiverr is a global online marketplace for freelance services. Fiverr's platform connects freelancers to people or businesses looking to hire. The unique term for a service offered by a seller on Fiverr is called a 'Gig. ",
+    logo: herolog,
+    github: "https://github.com/Tushit99/tedious-advertisement-2369",
+    tec: ["HTML", "CSS", "Javascript"],
+    netlify: "https://nykaa-clone20.netlify.app/",
+    fullImg: [
+      { im: mainhero, name: "Home" },
+      { im: herologin, name: "Logo" },
+      { im: herofooter, name: "Footer" },
+      { im: herocart, name: "Cart" },
+      { im: heroPay, name: "Payment" },
+    ],
+  },
+  {
+    id: 4,
+    image: jc,
+    title: "J.Crew",
+    logo: jcrew,
+    description:
+      "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
+    tec: ["React", "CSS", "Javascript"],
+    github: "https://github.com/Tushit99/versed-silver-14",
+    netlify: "https://versed-silver-14.netlify.app/",
+    fullImg: [
+      { im: jchome, name: "Home" },
+      { im: jcmid, name: "advertisement" },
+      { im: jcsort, name: "Sort" },
+      { im: jcrcart, name: "Cart" },
+      { im: jcpayment, name: "Payment" },
+    ],
   },
 ];
 
-const Project = () => {
+const Project = ({ project }) => {
+
   const handlegitlink = (url) => {
     window.open(url, "_blank");
   };
@@ -40,55 +117,98 @@ const Project = () => {
     window.open(url, "_blank");
   };
 
-  return (
-    <div className={pro.box}>
-      <h1>Project</h1>
-      <Grid
+  return ( 
+    <div ref={project} className={pro.box} >
+      <Heading as="h2" size="2xl" color={"white"} fontWeight={400}>
+        Projects
+      </Heading>
+      <Grid 
+        id="projects"
         templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         padding="20px 30px"
-        gap={6}
       >
         {D1.map((e) => (
-          <Card
-            bg="whiteAlpha.100"
-            color="black"
-            boxShadow="md"
-            variant="solid"
-            key={e.id} 
-            w="80%"
-            m="20px auto"
-            textAlign="center"
+          <div
+            key={e.id}
+            className="project-card"
           >
-            <CardBody>
-              <Image src={e.image} alt="imgLink" borderRadius="lg" />
-              <Stack mt="6" spacing="3">
-                <Heading size="md"> {e.title} </Heading>
-              </Stack> 
-            </CardBody>
-            <CardFooter w="100%">
-              <Flex align="center" justify="space-between" w="100%">
-                <Button
-                  variant="solid"
-                  colorScheme="blue"
-                  color="white"
-                  onClick={() => {
-                    handlegitlink(e.github);
-                  }}
-                >
-                  Github
-                </Button>
-                <Button
-                  colorScheme="blue"
-                  variant="outline"
-                  onClick={() => {
-                    handlevercelLink(e.netlify);
-                  }}
-                >
-                  Link
-                </Button>
+            <Card
+              color="white"
+              boxShadow="md"
+              variant="solid"
+              w={{ base: "100%", md: "90%" }}
+              m="20px auto"
+              textAlign="center"
+              backgroundColor="unset"
+              border={"2px"}
+              borderColor={"rgba(12, 49, 79, 0.603)"}
+              className={pro.probox}
+            >
+              <img
+                src={e.logo}
+                alt="imgLink"
+                className="project-title"
+                style={{ margin: "4px auto", height: "40px" }}
+              />
+              <Box padding="10px 20px" textAlign="left" >
+                <Blog text={e.description} />
+              </Box>
+              <Flex
+                alignItems="center"
+                gap="10px"
+                wrap="wrap"
+                textAlign="left"
+                width="90%"
+                margin="auto"
+              >
+                <Heading className="project-tech-stack" as="h4" size="sm" color="white" fontWeight={400}>
+                  TecStack:
+                </Heading>
+                {e.tec.map((x, i) => (
+                  <Stack direction='row' margin="0" key={i}>
+                    <Badge variant='outline' colorScheme='messenger'>
+                      {x}
+                    </Badge>
+                  </Stack>
+                ))}
               </Flex>
-            </CardFooter>
-          </Card>
+              <CardBody>
+                <Image src={e.image} alt="imgLink" borderRadius="lg" />
+              </CardBody>
+
+              <CardFooter  >
+                <Flex align="center" justifyContent="space-evenly" w="100%" margin="auto" gap="4px">
+                  <Prodrawer title={e.title} fullImg={e.fullImg} />
+                  <Button
+                    variant="outline"
+                    colorScheme="blue"
+                    className="project-github-link"
+                    margin="0"
+                    fontSize={{ base: "md", md: "lg" }}
+                    padding={{ base: "10px", md: "14px" }}
+                    onClick={() => {
+                      handlegitlink(e.github);
+                    }}
+                  >
+                    Github
+                  </Button>
+                  <Button
+                    colorScheme="blue"
+                    variant="outline"
+                    margin="0"
+                    className="project-deployed-link"
+                    fontSize={{ base: "md", lg: "lg" }}
+                    padding={{ base: "10px", md: "14px" }}
+                    onClick={() => {
+                      handlevercelLink(e.netlify);
+                    }}
+                  >
+                    Link
+                  </Button>
+                </Flex>
+              </CardFooter>
+            </Card>
+          </div>
         ))}
       </Grid>
     </div>

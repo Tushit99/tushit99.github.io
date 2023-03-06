@@ -1,77 +1,42 @@
-import React, { useState } from "react";
-import about from "./about.module.css";
-import img from "../Image/tushitgo.png";
-import { Button } from "@chakra-ui/react";
+import React from "react";
+import abt from "./About.module.css"; 
+import { Button, Heading, Link } from "@chakra-ui/react";
 import resumeme from "../Image/resumeme.pdf";
+import mypic from "../Image/tushitgo.png"
 
-const About = () => {
-  const [load, setLoad] = useState(false);
+const About = ({ about }) => {
 
-  const handleShowing = (url) => {
-    setLoad(true);
-    setTimeout(() => {
-      setLoad(false);
-    }, 1000);
-    window.open(url, "_blank");
-  };
+  const handleOpenLink =()=>{
+    window.open("https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing", "_blank")
+  } 
 
   return (
-    <div className={about.box}>
-      <h4> Get to Know </h4>
-      <h1> About </h1>
-      <div className={about.main}>
-        <div className={about.picspace}>
-          <div className={about.picbox}>
-            <img src={img} alt="Profile-Ing" className={about.mypic} />
-            <div className={about.picback}></div>
-            <div className={about.picback2}></div>
+    <div id="about" className="about section">
+      <div ref={about} className={abt.box}>
+        <h5> Get to Know </h5>
+        <Heading as='h2' color={"white"} size='2xl' fontWeight={400}> About </Heading>
+        <div className={abt.main}>
+          <div className={abt.aboutdetail}>
+            <p>
+              I'm a Full Stack Web Developer living in Jamshedpur, Jharkhand. My experience includes working with databases like MongoDB. I'm passionate about creating applications that are both functional and visually appealing. I'm always eager to learn new technologies and improve my skills. If you're looking for someone to help bring your ideas to life, I'd love to work with you!
+            </p>
+            <div className={abt.buttonbox}>
+              {/* <Link href="https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing" target={"_blank"} _hover={{ textDecoration: "none" }} >
+                <Button colorScheme='blue' variant='solid' id="resume-button-1">
+                  My Resume 
+                </Button>
+              </Link> */}
+              <Link href={resumeme} download={"Tushit Saxena"} id="resume-button-2" onClick={handleOpenLink} _hover={{ textDecoration: "none" }} >
+                <Button colorScheme='blue' border={"2px"} width="100%" _hover={{backgroundColor: "rgb(205, 205, 255)"}} variant='outline' >
+                  My Resume 
+                </Button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className={about.aboutdetail}>
-          <p>
-            Hi Everyone, I am Tushit Saxena from Jharkhand, Jamshedpur.I
-            graduated from Meerut, Uttar Pradesh, with a Bachelor of Hotel
-            Management degree. 
-          </p>
-          <div>
-            <a href={resumeme} download>
-              <Button
-                isLoading={load}
-                loadingText="Downloading"
-                bg="whiteAlpha.100"
-                color="black"
-                boxShadow="md"
-                variant="solid"
-                w="80%"
-                m="20px auto"
-                textAlign="center"
-                _hover={{
-                  boxShadow: "outline",
-                }}
-              >
-                download
-              </Button>
-            </a>
-            <Button
-              bg="whiteAlpha.100"
-              color="black"
-              boxShadow="md"
-              variant="solid"
-              w="80%"
-              m="20px auto"
-              textAlign="center"
-              _hover={{
-                boxShadow: "outline",
-              }}
-              onClick={() => { 
-                handleShowing(
-                  "https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing"
-                );
-              }}
-            >
-              {" "}
-              Resume{" "}
-            </Button>
+          <div className={abt.picspace}>
+            <div className={abt.circle}>
+              <img src={mypic} id={abt.im2} className="home-img" alt="myimages" />
+            </div> 
           </div>
         </div>
       </div>
