@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4ce0895.css",
-    "main.js": "/static/js/main.3da17bbc.js",
+    "main.css": "/static/css/main.ccfa6fcd.css",
+    "main.js": "/static/js/main.ed7defc3.js",
     "static/js/787.b4fd6981.chunk.js": "/static/js/787.b4fd6981.chunk.js",
-    "static/media/jcrewhome.png": "/static/media/jcrewhome.199a8bd2d22def77f313.png",
     "static/media/sorting.png": "/static/media/sorting.9022bc2ba4eb2460e500.png",
     "static/media/helogin.png": "/static/media/helogin.8f4ccd3bd9826617b9a0.png",
     "static/media/main.png": "/static/media/main.c837374c8078211ed811.png",
@@ -11,21 +10,28 @@
     "static/media/mid.png": "/static/media/mid.fa13a354881851cab6fc.png",
     "static/media/jchome.png": "/static/media/jchome.575a48f96b2c19e09cbb.png",
     "static/media/resumeme.pdf": "/static/media/resumeme.462200e14f04b90c318e.pdf",
+    "static/media/jcrewhome.png": "/static/media/jcrewhome.8a97a9aca457c43ade9f.png",
     "static/media/cart.png": "/static/media/cart.875e6b76791eb5090af3.png",
     "static/media/tushitgo.png": "/static/media/tushitgo.390036cb51103515d782.png",
     "static/media/hepayment.png": "/static/media/hepayment.74ca49446817f7c28b48.png",
+    "static/media/relHome.png": "/static/media/relHome.da303b7ddbf1cb61d5e4.png",
     "static/media/herofooter.png": "/static/media/herofooter.812332f96fce2a70614c.png",
+    "static/media/relProduct.png": "/static/media/relProduct.fe53561675f4529f17b1.png",
     "static/media/payment.png": "/static/media/payment.094f1b2b7946ae3013ba.png",
-    "static/media/navname.png": "/static/media/navname.8c3b49708b42615ecdc8.png",
+    "static/media/navname.png": "/static/media/navname.cf0e0ca3e09116e50e39.png",
+    "static/media/relfooter.png": "/static/media/relfooter.7b0dd23a9925e4726b28.png",
+    "static/media/relCart.png": "/static/media/relCart.b008852de85fc0f7303e.png",
+    "static/media/relAdmin.png": "/static/media/relAdmin.dda759aa0291a5c32e79.png",
     "static/media/helogo.png": "/static/media/helogo.4fa62ad0b4efb7246e34.png",
+    "static/media/relLogo.png": "/static/media/relLogo.f3c053a8eb82210f7d74.png",
     "static/media/jcrew.png": "/static/media/jcrew.9f8a26c97eb12b9967bf.png",
     "index.html": "/index.html",
-    "main.f4ce0895.css.map": "/static/css/main.f4ce0895.css.map",
-    "main.3da17bbc.js.map": "/static/js/main.3da17bbc.js.map",
+    "main.ccfa6fcd.css.map": "/static/css/main.ccfa6fcd.css.map",
+    "main.ed7defc3.js.map": "/static/js/main.ed7defc3.js.map",
     "787.b4fd6981.chunk.js.map": "/static/js/787.b4fd6981.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4ce0895.css",
-    "static/js/main.3da17bbc.js"
+    "static/css/main.ccfa6fcd.css",
+    "static/js/main.ed7defc3.js"
   ]
 }
