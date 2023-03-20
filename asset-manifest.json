@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9310dfb6.css",
-    "main.js": "/static/js/main.bfe3c3c3.js",
+    "main.css": "/static/css/main.7e55a4e0.css",
+    "main.js": "/static/js/main.491cabaa.js",
     "static/js/787.b4fd6981.chunk.js": "/static/js/787.b4fd6981.chunk.js",
     "static/media/sorting.png": "/static/media/sorting.9022bc2ba4eb2460e500.png",
     "static/media/helogin.png": "/static/media/helogin.8f4ccd3bd9826617b9a0.png",
@@ -24,14 +24,15 @@
     "static/media/relAdmin.png": "/static/media/relAdmin.dda759aa0291a5c32e79.png",
     "static/media/helogo.png": "/static/media/helogo.4fa62ad0b4efb7246e34.png",
     "static/media/relLogo.png": "/static/media/relLogo.f3c053a8eb82210f7d74.png",
+    "static/media/vsc.png": "/static/media/vsc.6b794dd4951be5ead620.png",
     "static/media/jcrew.png": "/static/media/jcrew.9f8a26c97eb12b9967bf.png",
     "index.html": "/index.html",
-    "main.9310dfb6.css.map": "/static/css/main.9310dfb6.css.map",
-    "main.bfe3c3c3.js.map": "/static/js/main.bfe3c3c3.js.map",
+    "main.7e55a4e0.css.map": "/static/css/main.7e55a4e0.css.map",
+    "main.491cabaa.js.map": "/static/js/main.491cabaa.js.map",
     "787.b4fd6981.chunk.js.map": "/static/js/787.b4fd6981.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9310dfb6.css",
-    "static/js/main.bfe3c3c3.js"
+    "static/css/main.7e55a4e0.css",
+    "static/js/main.491cabaa.js"
   ]
 }
