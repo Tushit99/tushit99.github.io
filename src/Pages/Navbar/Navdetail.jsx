@@ -25,7 +25,7 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
     );
   };
 
-  return (
+  return ( 
     <div> 
       <div
         id="nav-menu"
@@ -44,8 +44,8 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
             className="nav-link home"
             onClick={() => home.current.scrollIntoView({ behavior: "smooth" })}
           >
-            home
-          </div>
+            Home
+          </div> 
           <div
             className="nav-link about"
             onClick={() => about.current.scrollIntoView({ behavior: "smooth" })}

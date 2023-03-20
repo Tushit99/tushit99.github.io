@@ -39,7 +39,7 @@ const Prodrawer = ({ fullImg, title }) => {
         <DrawerOverlay />
         <DrawerContent backgroundSize="100% 100%" backgroundImage="url('https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5')" color="white" >
           <DrawerCloseButton />
-          <DrawerHeader size="md"> {title} Project Webpage </DrawerHeader>
+          <DrawerHeader size="md" > {title} Project Webpage </DrawerHeader>
 
           <DrawerBody
             w="90%"

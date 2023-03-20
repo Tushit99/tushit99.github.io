@@ -32,23 +32,32 @@ import jcsort from "../jcrewPictures/sorting.png";
 import Prodrawer from "../ProjectDrawer.jsx/Prodrawer";
 import Blog from "../Readbox/Blog";
 
+import reladmin from "../relience/relAdmin.png";
+import relCart from "../relience/relCart.png";
+import relfooter from "../relience/relfooter.png";
+import relHome from "../relience/relHome.png";
+import relProduct from "../relience/relProduct.png";
+import relLogo from "../relience/relLogo.png";
+
+
+
 const D1 = [
   {
     id: 1,
-    image: hemain,
+    image: relHome,
     title: "Fiverr",
     description:
-      "Fiverr is a global online marketplace for freelance services. Fiverr's platform connects freelancers to people or businesses looking to hire. The unique term for a service offered by a seller on Fiverr is called a 'Gig. ",
-    logo: herolog,
-    github: "https://github.com/Tushit99/tedious-advertisement-2369",
+      "Digital Xpress is ECommerce Website & is a clone of Reliance Digital. It is used for buying the electrical products, Home Appliances & other kind of products. Digital Express Digital Stores are bigger in size than the other format Digital Xpress Mini Stores. It is one of the largest electronics retailers in India with over 5,000 products in its inventory.",
+    logo: relLogo,
+    github: "https://github.com/imukeshkaushal/relianceDigital_clone",
     tec: ["HTML", "CSS", "Javascript"],
-    netlify: "https://nykaa-clone20.netlify.app/",
+    netlify: "https://frontend-beta-wine.vercel.app/",
     fullImg: [
-      { im: mainhero, name: "Home" },
-      { im: herologin, name: "Logo" },
-      { im: herofooter, name: "Footer" },
-      { im: herocart, name: "Cart" },
-      { im: heroPay, name: "Payment" },
+      { im: relHome, name: "Home" },
+      { im: relfooter, name: "Footer" },
+      { im: reladmin, name: "Admin" },
+      { im: relCart, name: "Cart" },
+      { im: relProduct, name: "Product" },
     ],
   },
   {
@@ -58,7 +67,7 @@ const D1 = [
     logo: jcrew,
     description:
       "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
-    tec: ["React", "CSS", "Javascript"], 
+    tec: ["React", "CSS", "Javascript"],
     github: "https://github.com/Tushit99/versed-silver-14",
     netlify: "https://versed-silver-14.netlify.app/",
     fullImg: [
@@ -117,12 +126,12 @@ const Project = ({ project }) => {
     window.open(url, "_blank");
   };
 
-  return ( 
+  return (
     <div ref={project} className={pro.box} >
       <Heading as="h2" size="2xl" color={"white"} fontWeight={400}>
         Projects
       </Heading>
-      <Grid 
+      <Grid
         id="projects"
         templateColumns={{ sm: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         padding="20px 30px"
@@ -147,9 +156,9 @@ const Project = ({ project }) => {
               <img
                 src={e.logo}
                 alt="imgLink"
-                className="project-title"
                 style={{ margin: "4px auto", height: "40px" }}
               />
+              <h3 className="project-title"> {e.title} </h3>
               <Box padding="10px 20px" textAlign="left" >
                 <Blog text={e.description} />
               </Box>
@@ -173,7 +182,7 @@ const Project = ({ project }) => {
                 ))}
               </Flex>
               <CardBody>
-                <Image src={e.image} alt="imgLink" borderRadius="lg" />
+                <Image src={e.image} className={pro.showimg} alt="imgLink" borderRadius="lg" />
               </CardBody>
 
               <CardFooter  >

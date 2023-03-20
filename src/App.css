@@ -1,10 +1,13 @@
 .App {
-  text-align: center; 
-  color: white; 
-  margin: auto; 
-}  
+  text-align: center;
+  color: white;
+  margin: auto;
+}
 
 .container {
+  /* background: #000000; 
+  background: -webkit-linear-gradient(to right, #0e0e13, #0f0f10, #0c0c13); 
+  background: linear-gradient(to right, #0e0e13, #0f0f10, #0c0c13);   */
   background-color: black;
   z-index: -6;
   height: 100vh;
@@ -16,49 +19,45 @@
   right: 0;
 }
 
-.allnavbox{
-  background-color: rgb(230, 234, 255); 
-  display: flex; 
-  width: 320px; 
-  margin: auto; 
-  padding: 6px; 
-  border-radius: 150px; 
-  justify-content: space-around; 
-  align-items: center;  
-  z-index: -2; 
-  padding: 10px; 
+.allnavbox {
+  background-color: rgb(230, 234, 255);
+  display: flex;
+  width: 320px;
+  margin: auto;
+  padding: 6px;
+  border-radius: 150px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: -2;
+  padding: 10px;
 }
 
-
-.allnavbox>div{
-  border-radius: 100%; 
-  text-align: center; 
-  padding: 5px; 
-  cursor: pointer; 
-  color: black; 
-  transition: all .4s ease-in-out;
-} 
-
-.allnavbox>div:hover{  
-  transform: scale(1.5); 
-  color: rgb(4, 0, 255); 
-}  
-
-.allnavbox>div:active{ 
-  transform: scale(1);  
-  color: white;  
-} 
-
-.readmore{
-  margin: 0; 
-  text-align: left; 
-  color: blue; 
-  font-weight: 500;  
-}
- 
-.readmore:hover{
-  text-decoration: underline; 
+.allnavbox > div {
+  border-radius: 100%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.4s ease-in-out;
 }
 
+.allnavbox > div:hover {
+  transform: scale(1.5);
+  color: rgb(4, 0, 255);
+}
 
+.allnavbox > div:active {
+  transform: scale(1);
+  color: white;
+}
 
+.readmore {
+  margin: 0;
+  text-align: left;
+  color: blue;
+  font-weight: 500;
+}
+
+.readmore:hover {
+  text-decoration: underline;
+}

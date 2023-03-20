@@ -67,7 +67,7 @@
   margin: auto; 
   border: 2px solid rgba(36, 36, 255, 0.765);   
   /* box-shadow: rgba(46, 62, 240, 0.4) 5px -5px, rgba(46, 53, 240, 0.3) 10px -10px, rgba(56, 46, 240, 0.2) 15px -15px, rgba(46, 59, 240, 0.1) 20px -20px, rgba(46, 59, 240, 0.05) 25px -25px;  */
-  border-radius: 100%; 
+  border-radius: 100%;  
   width: 260px;   
   height: 260px; 
   overflow: hidden; 

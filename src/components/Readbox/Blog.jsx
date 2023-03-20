@@ -7,7 +7,7 @@ export default function Blog({text}) {
     return (
         <Grid className="project-description" textAlign={"left"}> 
             {showMore ? text : `${text.substring(0, 120)} . . .`}  
-            <button className="readmore" onClick={() => setShowMore(!showMore)}>Read more</button>
+            <button className="readmore" onClick={() => setShowMore(!showMore)}>{showMore ? "Read less":"Read more"}</button>
         </Grid> 
     );
 } 

@@ -59,5 +59,10 @@
       opacity: 1;
   }  
 
+  .showimg{
+    /* border: 2px solid rgb(255, 0, 0);  */
+    height: 240px;  
+    aspect-ratio: 5/3;
+  }
 
 
