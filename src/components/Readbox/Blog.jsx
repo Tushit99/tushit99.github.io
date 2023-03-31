@@ -6,7 +6,7 @@ export default function Blog({text}) {
     const [showMore, setShowMore] = useState(false);
     return (
         <Grid className="project-description" textAlign={"left"}> 
-            {showMore ? text : `${text.substring(0, 120)} . . .`}  
+            {showMore ? text : `${text.substring(0, 108)} . . .`}  
             <button className="readmore" onClick={() => setShowMore(!showMore)}>{showMore ? "Read less":"Read more"}</button>
         </Grid> 
     );

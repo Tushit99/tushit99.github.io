@@ -12,6 +12,11 @@
     z-index: -1; 
   }
   
+  .box h6{
+    font-size: 1px; 
+    color: black;
+  }
+
   .box::after {
     content: "";
     border-radius: 5px;
@@ -52,7 +57,7 @@
   .probox:hover {
     -webkit-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05); 
-    border: 2px solid rgba(15, 83, 138, 0.89);
+    border: 2px solid rgba(0, 140, 255, 0.89);
   }
   
   .probox:hover::after {
@@ -61,8 +66,23 @@
 
   .showimg{
     /* border: 2px solid rgb(255, 0, 0);  */
-    height: 240px;  
-    aspect-ratio: 5/3;
+    height: auto;  
+    /* aspect-ratio: 4/3; */
   }
+
+
+/* @media screen and (min-width:500px) and (max-width:980px) {
+  .showimg{
+    border: 2px solid rgb(255, 0, 0); 
+    height: auto;   
+  }
+}
+
+@media screen and (min-width:100px) and (max-width:500px) {
+  .showimg{
+    border: 2px solid rgb(254, 254, 254); 
+    height: auto;   
+  }
+} */
 
 

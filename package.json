@@ -12,6 +12,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "copy-to-clipboard": "^3.3.3",
     "deploy": "^1.0.3",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^8.0.2",

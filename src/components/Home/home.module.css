@@ -1,48 +1,89 @@
 .box {
-    position: relative;
-    display: inline-block;
-    width: 90%; 
-    padding: 80px 00px;
-    margin-top: 60px ;   
-    border-radius: 5px;  
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); 
-    color: white; 
-    z-index: -1;
-    text-align: center; 
-  }
-  
-  /* ---------  */
-
-.box>img{  
-    /* border: 2px solid black;  */ 
-    margin: 20px auto; 
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding: 80px 00px;
+  margin-top: 60px;
+  border-radius: 5px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  color: white;
+  z-index: -1;
+  text-align: center;
 }
 
-.h3{ 
-    font-size: 35px;
-    margin: 10px 0; 
-} 
+.box .animate {
+  -webkit-animation: tracking-in-contract-bck-top 3s
+    cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract-bck-top 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+}
 
-.h4{
-    width: 70%; 
-    font-size: large;
-    margin: auto; 
-    color: rgb(255, 255, 255);
-    line-height: 30px; 
-    font-weight: bolder;
-} 
+@-webkit-keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px) translateY(-300px);
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---------  */
+
+.box > img {
+  /* border: 2px solid black;  */
+  margin: 20px auto;
+}
+
+.h3 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.h4 {
+  width: 70%;
+  font-size: large;
+  margin: auto;
+  color: rgb(255, 255, 255);
+  line-height: 30px;
+  font-weight: bolder;
+}
 
 @media screen and (min-width: 100px) and (max-width: 900px) {
-  .box{
-    margin-top: 0px; 
-  }
+  .box {
+    margin-top: 0px;
+    width: 94%; 
+  } 
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
-    .h4>span{
-        display: none;
-    }
+  .h4 > span {
+    display: none;
+  }
+  .box {
+    width: 100%; 
+  } 
 }
-
-
- 

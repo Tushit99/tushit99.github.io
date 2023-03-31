@@ -8,6 +8,8 @@ import res from "../../components/Image/resumeme.pdf";
 
 import { FaBook } from "react-icons/fa";
 import mylogo from "../../components/Image/navname.png";
+import { Button } from "@chakra-ui/react"; 
+import { HiOutlineDownload } from 'react-icons/hi'
 
 const Navdetail = ({ home, about, skill, contact, project }) => {
   const [scroll, setScroll] = useState(0);
@@ -25,27 +27,27 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
     );
   };
 
-  return ( 
-    <div> 
+  return (
+    <div>
       <div
         id="nav-menu"
         className={nav.topnav}
         style={{
           backgroundColor: scroll > 50 ? "#000000" : "unset",
           borderRadius: scroll > 50 ? "2px" : "0px",
-          boxShadow: scroll > 50 ? "0px 1px 10px #ffffff" : "0 0 0 red",
+          boxShadow: scroll > 50 ? "0px 1px 10px #095dbc" : "0 0 0 red",
         }}
       >
-        <div className={nav.namelogo}>
+        <div className={nav.namelogo}> 
           <img src={mylogo} alt="myName-Img" />
         </div>
-        <div className={nav.topoption}> 
+        <div className={nav.topoption}>
           <div
             className="nav-link home"
             onClick={() => home.current.scrollIntoView({ behavior: "smooth" })}
           >
             Home
-          </div> 
+          </div>
           <div
             className="nav-link about"
             onClick={() => about.current.scrollIntoView({ behavior: "smooth" })}
@@ -59,7 +61,7 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
             Skill
           </div>
           <div
-            className="nav-link projects" 
+            className="nav-link projects"
             onClick={() =>
               project.current.scrollIntoView({ behavior: "smooth" })
             }
@@ -72,17 +74,19 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
               contact.current.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Contact 
+            Contact
           </div>
-          <a
-            className="nav-link resume" 
-            id="resume-button-1"
-            href={res} 
-            onClick={handleResume} 
-            download="Tushit_Saxena_Resume"
-          >
-            Resume
-          </a>
+          <Button rightIcon={<HiOutlineDownload />} _hover={{borderColor:"blue",color:"blue"}} colorScheme='white' variant='outline'>
+            <a
+              className="nav-link resume"
+              id="resume-button-1"
+              href={res}
+              onClick={handleResume}
+              download="Tushit_Saxena_Resume"
+            >
+              Resume
+            </a>
+          </Button>
         </div>
       </div>
       <div className={nav.bottomNav}>

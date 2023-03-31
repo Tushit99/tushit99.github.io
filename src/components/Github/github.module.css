@@ -41,13 +41,14 @@
   }   
 
   .grid *{
-    margin: auto; 
+    margin: auto;  
+    border: 2px solid rgb(0, 0, 159);  
+    border-radius: 20px; 
   } 
 
   @media screen and (min-width: 100px) and (max-width: 920px){ 
     .box{ 
-        display: grid;  
-        /* border: 3px solid blue;  */
+        display: grid;   
     } 
 
     .grid{

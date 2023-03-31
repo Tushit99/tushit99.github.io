@@ -14,7 +14,9 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    useToast
 } from "@chakra-ui/react";
+
 import {
     MdPhone,
     MdEmail,
@@ -29,9 +31,11 @@ import { useRef, useState } from "react";
 import swal from "sweetalert";
 import cot from "./contacts.module.css";
 import { EmailIcon } from "@chakra-ui/icons";
+import copy from "copy-to-clipboard";
 
 export const Contact = ({ contact }) => {
     const [emailsending, emailLoading] = useState(false);
+    const toast = useToast();
     const form = useRef();
 
     const handleGit = () => {
@@ -81,6 +85,16 @@ export const Contact = ({ contact }) => {
         e.target.reset();
     };
 
+    const copyToClipboard = () => {
+        copy("tushitsaxena4@gmail.com");
+        toast({
+            title: 'Email copyed', 
+            status: 'success',
+            duration: 2000,
+            isClosable: true,
+        })
+    }
+
     return (
         <Container
             id="contact"
@@ -99,7 +113,7 @@ export const Contact = ({ contact }) => {
                     backgroundSize="100% 100%"
                     borderRadius="lg"
                     margin="auto"
-                    width="90%"
+                    width="95%"
                     m={{ sm: 4, md: 5, lg: 6 }}
                     p={{ sm: 5, md: 5, lg: 16 }}
                 >
@@ -121,20 +135,21 @@ export const Contact = ({ contact }) => {
                                             variant="ghost"
                                             id="contact-email"
                                             color="#3154ff"
+                                            onClick={copyToClipboard}
                                             _hover={{
                                                 border: "1px solid #1C6FEB",
                                                 backgroundColor: "#ffffffb4",
                                                 color: "blue",
                                             }}
                                             leftIcon={<MdEmail color="#1970F1" size="20px" />}
-                                        >
+                                        > 
                                             tushitsaxena4@gmail.com
                                         </Button>
                                         <Button
                                             size="md"
                                             height="40px"
                                             cursor="auto"
-                                            width="200px"
+                                            width="220px"
                                             variant="ghost"
                                             color="#3154ff"
                                             _hover={{
@@ -144,12 +159,12 @@ export const Contact = ({ contact }) => {
                                             }}
                                             leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
                                         >
-                                            Jamshedpur, India
+                                            Jamshedpur, Jharkhand
                                         </Button>
                                         <Button
                                             size="md"
                                             height="40px"
-                                            width="190px"
+                                            width="180px"
                                             cursor="auto"
                                             id="contact-phone"
                                             variant="ghost"
@@ -253,9 +268,10 @@ export const Contact = ({ contact }) => {
                                                         loadingText="Sending..."
                                                         variant="solid"
                                                         bg="#0D74FF"
-                                                        type="submit"
+                                                        type="submit" 
+                                                        className={cot.submitbt}
                                                         value="Send"
-                                                        leftIcon={<EmailIcon />} 
+                                                        leftIcon={<EmailIcon />}
                                                         color="white"
                                                     >
                                                         Send Message
@@ -381,7 +397,7 @@ export const Contact = ({ contact }) => {
 //                             </a>
 //                         </Button>
 //                     </div>
-//                 </div> 
+//                 </div>
 //                 <div className={cont.form}>
 //                     <form ref={form} onSubmit={sendEmail} className={cont.infomation}>
 //                         <label>Name</label>

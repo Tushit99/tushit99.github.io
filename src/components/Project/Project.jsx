@@ -37,7 +37,17 @@ import relCart from "../relience/relCart.png";
 import relfooter from "../relience/relfooter.png";
 import relHome from "../relience/relHome.png";
 import relProduct from "../relience/relProduct.png";
-import relLogo from "../relience/relLogo.png";
+import relLogo from "../relience/relLogo.png"; 
+
+
+import urhome from "../urban/home.png" 
+import urcart from "../urban/cart.png" 
+import urcrosal from "../urban/crosal.png" 
+import urfooter from "../urban/footer.png" 
+import urpay from "../urban/payment.png" 
+import urproduct from "../urban/product.png" 
+import uclogo from "../urban/uclogo.png" 
+
 
 
 
@@ -50,7 +60,7 @@ const D1 = [
       "Digital Xpress is ECommerce Website & is a clone of Reliance Digital. It is used for buying the electrical products, Home Appliances & other kind of products. Digital Express Digital Stores are bigger in size than the other format Digital Xpress Mini Stores. It is one of the largest electronics retailers in India with over 5,000 products in its inventory.",
     logo: relLogo,
     github: "https://github.com/imukeshkaushal/relianceDigital_clone",
-    tec: ["HTML", "CSS", "Javascript"],
+    tec: ["HTML", "CSS", "Javascript","Chakra","HTML"],
     netlify: "https://frontend-beta-wine.vercel.app/",
     fullImg: [
       { im: relHome, name: "Home" },
@@ -67,7 +77,7 @@ const D1 = [
     logo: jcrew,
     description:
       "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
-    tec: ["React", "CSS", "Javascript"],
+    tec: ["React", "CSS", "Javascript","HTML"],
     github: "https://github.com/Tushit99/versed-silver-14",
     netlify: "https://versed-silver-14.netlify.app/",
     fullImg: [
@@ -86,7 +96,7 @@ const D1 = [
       "Fiverr is a global online marketplace for freelance services. Fiverr's platform connects freelancers to people or businesses looking to hire. The unique term for a service offered by a seller on Fiverr is called a 'Gig. ",
     logo: herolog,
     github: "https://github.com/Tushit99/tedious-advertisement-2369",
-    tec: ["HTML", "CSS", "Javascript"],
+    tec: ["HTML", "CSS", "Javascript","Bootstrap","JSON"],
     netlify: "https://nykaa-clone20.netlify.app/",
     fullImg: [
       { im: mainhero, name: "Home" },
@@ -98,20 +108,21 @@ const D1 = [
   },
   {
     id: 4,
-    image: jc,
+    image: urhome,
     title: "J.Crew",
-    logo: jcrew,
+    logo: uclogo,
     description:
-      "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
-    tec: ["React", "CSS", "Javascript"],
-    github: "https://github.com/Tushit99/versed-silver-14",
-    netlify: "https://versed-silver-14.netlify.app/",
+      "The company provides a platform that allows skilled and experienced professionals to connect with users looking for specific services. ",
+    tec: ["React", "CSS", "Javascript","HTML"],
+    github: "https://github.com/Tushit99/-stupendous-addition-3073",
+    netlify: "stupendous-addition-3073.netlify.app",
     fullImg: [
-      { im: jchome, name: "Home" },
-      { im: jcmid, name: "advertisement" },
-      { im: jcsort, name: "Sort" },
-      { im: jcrcart, name: "Cart" },
-      { im: jcpayment, name: "Payment" },
+      { im: urhome, name: "Home" },
+      { im: urproduct, name: "Product" },
+      { im: urcrosal, name: "Crosals" },
+      { im: urpay, name: "Payment" },
+      { im: urcart, name: "Cart" },
+      { im: urfooter, name: "Footer" },
     ],
   },
 ];
@@ -150,7 +161,7 @@ const Project = ({ project }) => {
               textAlign="center"
               backgroundColor="unset"
               border={"2px"}
-              borderColor={"rgba(12, 49, 79, 0.603)"}
+              borderColor={"rgba(9, 39, 63, 0.603)"}
               className={pro.probox}
             >
               <img
@@ -158,7 +169,7 @@ const Project = ({ project }) => {
                 alt="imgLink"
                 style={{ margin: "4px auto", height: "40px" }}
               />
-              <h3 className="project-title"> {e.title} </h3>
+              <h6 className="project-title"> {e.title} </h6>
               <Box padding="10px 20px" textAlign="left" >
                 <Blog text={e.description} />
               </Box>
@@ -170,12 +181,12 @@ const Project = ({ project }) => {
                 width="90%"
                 margin="auto"
               >
-                <Heading className="project-tech-stack" as="h4" size="sm" color="white" fontWeight={400}>
+                <Heading className="project-tech-stack" as="h4" size="sm" color="white" fontWeight={500}>
                   TecStack:
                 </Heading>
                 {e.tec.map((x, i) => (
                   <Stack direction='row' margin="0" key={i}>
-                    <Badge variant='outline' colorScheme='messenger'>
+                    <Badge colorScheme='purple'np>
                       {x}
                     </Badge>
                   </Stack>
