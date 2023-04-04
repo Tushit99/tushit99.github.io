@@ -7,7 +7,7 @@ import mypic from "../Image/tushitgo.png"
 const About = ({ about }) => {
 
   const handleOpenLink = () => {
-    window.open("https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing", "_blank")
+    window.open("https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing")
   }
 
   return (
@@ -26,11 +26,16 @@ const About = ({ about }) => {
                   My Resume 
                 </Button>
               </Link> */}
-              <Link href={resumeme} download={"Tushit Saxena"} id="resume-button-2" onClick={handleOpenLink} _hover={{ textDecoration: "none" }} >
-                <Button colorScheme='blue' border={"2px"} width="100%" _hover={{ backgroundColor: "rgb(205, 205, 255)" }} variant='outline' >
-                  My Resume
-                </Button>
-              </Link>
+              <a href={resumeme} download={"Tushit Saxena"} onClick={handleOpenLink} _hover={{ textDecoration: "none" }} >
+                <button 
+                // colorScheme='blue' 
+                // border={"2px"} 
+                width="100%" 
+                id="resume-button-2"
+                // _hover={{ backgroundColor: "rgb(205, 205, 255)" }} 
+                // variant='outline' 
+                >Download CV</button>
+              </a>
             </div>
           </div>
           <div className={abt.picspace}>
