@@ -1,5 +1,5 @@
 import { Heading } from "@chakra-ui/react";
-import React from "react";
+import React from "react"; 
 import top from "./home.module.css";
 
 const Home = ({ home }) => {
@@ -11,13 +11,12 @@ const Home = ({ home }) => {
                 </Heading>
                 <Heading as="h2" id="user-detail-name" size="2xl" className={top.animate} fontWeight={400}>
                     TUSHIT SAXENA
-                </Heading>
+                </Heading> 
                 <img
                     src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=F7F7F7&center=true&vCenter=true&width=435&lines=+Full+Stack+Web+Developer;MERN+Stack"
                     alt="Typing SVG"
                 />
-                <h4 className={top.h4} data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="2000">
+                <h4 className={top.h4} >
                     I am a Full Stack Developer, passionate about building digital
                     products that improve everyday experience for people.
                     <span> I love to work on exciting projects that test what I've learnt,

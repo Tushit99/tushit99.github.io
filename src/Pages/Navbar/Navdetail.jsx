@@ -8,7 +8,7 @@ import res from "../../components/Image/resumeme.pdf";
 
 import { FaBook } from "react-icons/fa";
 import mylogo from "../../components/Image/navname.png";
-import { Button } from "@chakra-ui/react"; 
+import { Button } from "@chakra-ui/react";
 import { HiOutlineDownload } from 'react-icons/hi'
 
 const Navdetail = ({ home, about, skill, contact, project }) => {
@@ -22,8 +22,7 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
 
   const handleResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing",
-      "_blank"
+      "https://drive.google.com/file/d/1QDtKhJGLNZtCdd9Ia-8mJ1tMNs5fm-hg/view?usp=sharing"
     );
   };
 
@@ -38,7 +37,7 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
           boxShadow: scroll > 50 ? "0px 1px 10px #095dbc" : "0 0 0 red",
         }}
       >
-        <div className={nav.namelogo}> 
+        <div className={nav.namelogo}>
           <img src={mylogo} alt="myName-Img" />
         </div>
         <div className={nav.topoption}>
@@ -76,12 +75,11 @@ const Navdetail = ({ home, about, skill, contact, project }) => {
           >
             Contact
           </div>
-          <Button rightIcon={<HiOutlineDownload />} _hover={{borderColor:"blue",color:"blue"}} colorScheme='white' variant='outline'>
+          <Button id="resume-button-1" onClick={handleResume} rightIcon={<HiOutlineDownload />} _hover={{ borderColor: "blue", color: "blue" }} colorScheme='white' variant='outline'>
             <a
-              className="nav-link resume"
-              id="resume-button-1"
+              className="nav-link resume" 
+              id="resume-link-1"
               href={res}
-              onClick={handleResume}
               download="Tushit_Saxena_Resume"
             >
               Resume

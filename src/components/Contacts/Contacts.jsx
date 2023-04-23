@@ -55,40 +55,50 @@ export const Contact = ({ contact }) => {
             emailLoading(false);
         }, 2000);
 
-        emailjs
-            .sendForm(
-                "service_x8ah85s",
-                "template_0hob5st",
-                form.current,
-                "C_zzCKTMDoBITRzMC"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    swal({
-                        title: "Sent",
-                        text: "You message hase been sent",
-                        icon: "success",
-                        button: "OK",
-                    });
-                },
-                (error) => {
-                    console.log(error.text);
-                    swal({
-                        title: "Some thing went wrong!",
-                        text: "Try again later",
-                        icon: "error",
-                        button: "OK",
-                    });
-                }
-            );
+        emailjs.sendForm('service_gh309g9', 'template_0hob5st', form.current, 'C_zzCKTMDoBITRzMC')
+        .then((result) => {
+            swal({
+                title: "Sent",
+                text: "You message hase been sent",
+                icon: "success",
+                button: "OK",
+            });
+        }, (error) => {
+            swal({
+                title: "Some thing went wrong!",
+                text: "Try again later",
+                icon: "error",
+                button: "OK",
+            });
+        });
+
+
+        // emailjs.sendForm('service_x8ah85s', 'template_0hob5st', form.current, 'C_zzCKTMDoBITRzMC').then((result) => {
+        //         console.log(result.text);
+        //         swal({
+        //             title: "Sent",
+        //             text: "You message hase been sent",
+        //             icon: "success",
+        //             button: "OK",
+        //         });
+        //     },
+        //     (error) => {
+        //         console.log(error.text);
+        //         swal({
+        //             title: "Some thing went wrong!",
+        //             text: "Try again later",
+        //             icon: "error",
+        //             button: "OK",
+        //         });
+        //     }
+        // );
         e.target.reset();
     };
 
     const copyToClipboard = () => {
         copy("tushitsaxena4@gmail.com");
         toast({
-            title: 'Email copyed', 
+            title: 'Email copyed',
             status: 'success',
             duration: 2000,
             isClosable: true,
@@ -142,7 +152,7 @@ export const Contact = ({ contact }) => {
                                                 color: "blue",
                                             }}
                                             leftIcon={<MdEmail color="#1970F1" size="20px" />}
-                                        > 
+                                        >
                                             tushitsaxena4@gmail.com
                                         </Button>
                                         <Button
@@ -229,7 +239,7 @@ export const Contact = ({ contact }) => {
                                                             type="text"
                                                             placeholder="Enter name"
                                                             name="from_name"
-                                                            required
+                                                            required 
                                                             size="md"
                                                         />
                                                     </InputGroup>
@@ -268,7 +278,7 @@ export const Contact = ({ contact }) => {
                                                         loadingText="Sending..."
                                                         variant="solid"
                                                         bg="#0D74FF"
-                                                        type="submit" 
+                                                        type="submit"
                                                         className={cot.submitbt}
                                                         value="Send"
                                                         leftIcon={<EmailIcon />}

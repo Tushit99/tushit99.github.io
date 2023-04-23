@@ -37,17 +37,17 @@ import relCart from "../relience/relCart.png";
 import relfooter from "../relience/relfooter.png";
 import relHome from "../relience/relHome.png";
 import relProduct from "../relience/relProduct.png";
-import relLogo from "../relience/relLogo.png"; 
+import relLogo from "../relience/relLogo.png";
 
 
-import urhome from "../urban/home.png" 
-import urcart from "../urban/cart.png" 
-import urcrosal from "../urban/crosal.png" 
-import urfooter from "../urban/footer.png" 
-import urpay from "../urban/payment.png" 
-import urproduct from "../urban/product.png" 
-import uclogo from "../urban/uclogo.png" 
 
+import ffhome from "../fashon/home.png"
+import ffproduct from "../fashon/product.png"
+import fflogin from "../fashon/login.png"
+import ffsignup from "../fashon/sign.png"
+import ffcart from "../fashon/cart.png"
+import ffooter from "../fashon/footer.png"
+import fflogo from "../fashon/logo.png"
 
 
 
@@ -55,13 +55,13 @@ const D1 = [
   {
     id: 1,
     image: relHome,
-    title: "Fiverr",
+    title: "reliance",
     description:
-      "Digital Xpress is ECommerce Website & is a clone of Reliance Digital. It is used for buying the electrical products, Home Appliances & other kind of products. Digital Express Digital Stores are bigger in size than the other format Digital Xpress Mini Stores. It is one of the largest electronics retailers in India with over 5,000 products in its inventory.",
+      "Reliance Digital is used for buying the electrical products, Home Appliances & other kind of products. Digital Express Digital Stores are bigger in size than the other format Digital Xpress Mini Stores.",
     logo: relLogo,
     github: "https://github.com/imukeshkaushal/relianceDigital_clone",
-    tec: ["HTML", "CSS", "Javascript","Chakra","HTML"],
-    netlify: "https://frontend-beta-wine.vercel.app/",
+    tec: ["HTML", "CSS", "Javascript", "Chakra", "HTML"],
+    netlify: "https://reliance-digital-beryl.vercel.app/",
     fullImg: [
       { im: relHome, name: "Home" },
       { im: relfooter, name: "Footer" },
@@ -77,7 +77,7 @@ const D1 = [
     logo: jcrew,
     description:
       "The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, loungewear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes. ",
-    tec: ["React", "CSS", "Javascript","HTML"],
+    tec: ["React", "CSS", "Javascript", "HTML"],
     github: "https://github.com/Tushit99/versed-silver-14",
     netlify: "https://versed-silver-14.netlify.app/",
     fullImg: [
@@ -96,8 +96,8 @@ const D1 = [
       "Fiverr is a global online marketplace for freelance services. Fiverr's platform connects freelancers to people or businesses looking to hire. The unique term for a service offered by a seller on Fiverr is called a 'Gig. ",
     logo: herolog,
     github: "https://github.com/Tushit99/tedious-advertisement-2369",
-    tec: ["HTML", "CSS", "Javascript","Bootstrap","JSON"],
-    netlify: "https://nykaa-clone20.netlify.app/",
+    tec: ["HTML", "CSS", "Javascript", "Bootstrap", "JSON"],
+    netlify: "https://curious-travesseiro-aa7d46.netlify.app/",
     fullImg: [
       { im: mainhero, name: "Home" },
       { im: herologin, name: "Logo" },
@@ -108,21 +108,21 @@ const D1 = [
   },
   {
     id: 4,
-    image: urhome,
-    title: "J.Crew",
-    logo: uclogo,
+    image: ffhome,
+    title: "Fashion Frenzy",
+    logo: fflogo,
     description:
-      "The company provides a platform that allows skilled and experienced professionals to connect with users looking for specific services. ",
-    tec: ["React", "CSS", "Javascript","HTML"],
-    github: "https://github.com/Tushit99/-stupendous-addition-3073",
-    netlify: "stupendous-addition-3073.netlify.app",
+      "Anthropologie is a unique, full-lifestyle shopping destination, with a mostly exclusive assortment of clothing, shoes, accessories, beauty, furniture, home décor, garden, bridal, and more.",
+    tec: ["React", "CSS", "nodeJs", "MongoDB", "express"],
+    github: "https://github.com/suhail3535/alive-run-138",
+    netlify: "https://frontend-suhail3535.vercel.app/",
     fullImg: [
-      { im: urhome, name: "Home" },
-      { im: urproduct, name: "Product" },
-      { im: urcrosal, name: "Crosals" },
-      { im: urpay, name: "Payment" },
-      { im: urcart, name: "Cart" },
-      { im: urfooter, name: "Footer" },
+      { im: ffhome, name: "Home" },
+      { im: ffproduct, name: "Product" },
+      { im: fflogin, name: "Login" },
+      { im: ffsignup, name: "SiginUp" },
+      { im: ffcart, name: "Cart" },
+      { im: ffooter, name: "Footer" }, 
     ],
   },
 ];
@@ -166,7 +166,8 @@ const Project = ({ project }) => {
             >
               <img
                 src={e.logo}
-                alt="imgLink"
+                alt="imgLink" 
+                className={pro.imghover} 
                 style={{ margin: "4px auto", height: "40px" }}
               />
               <h6 className="project-title"> {e.title} </h6>
@@ -186,7 +187,7 @@ const Project = ({ project }) => {
                 </Heading>
                 {e.tec.map((x, i) => (
                   <Stack direction='row' margin="0" key={i}>
-                    <Badge colorScheme='purple'np>
+                    <Badge colorScheme='purple' np>
                       {x}
                     </Badge>
                   </Stack>
