@@ -168,7 +168,7 @@ const Project = ({ project }) => {
                 src={e.logo}
                 alt="imgLink" 
                 className={pro.imghover} 
-                style={{ margin: "4px auto", height: "40px" }}
+                style={{ margin: "4px auto", height: "64px" }}
               />
               <h6 className="project-title"> {e.title} </h6>
               <Box padding="10px 20px" textAlign="left" >

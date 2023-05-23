@@ -14,6 +14,7 @@ import { SiChakraui } from 'react-icons/si'
 import { SiNetlify } from 'react-icons/si'
 import { Heading } from '@chakra-ui/react'
 import { SiNextdotjs } from "react-icons/si";
+import { SiRender } from "react-icons/si";
 
 
 import vsc from "./imgs/vsc.png";
@@ -22,6 +23,8 @@ import git from "./imgs/git.png"
 import { SiTypescript } from "react-icons/si"
 import { AiFillCodeSandboxCircle } from 'react-icons/ai'
 import replet from "./imgs/replet.png"
+import cylic from "../Image/cyclic.png"
+import render from "../Image/render.png"
 
 
 
@@ -117,6 +120,15 @@ const Skills = ({ skill }) => {
                     <div id={skl.box5} data-aos="zoom-in" className="skills-card" onClick={() => handleopen("https://github.com/")}  >
                         <BsGithub size="50px" className='skills-card-img' />
                         <p className="skills-card-name"> Github </p>
+                    </div>
+                    <div id={skl.box5} data-aos="zoom-in" className="skills-card" onClick={() => handleopen("https://www.cyclic.sh/")}  >
+                        {/* <BsGithub size="50px" className='skills-card-img' />  */}
+                        <img src={cylic} alt="cylic-img" width="50px" className='skills-card-img' />
+                        <p className="skills-card-name"> Cyclic </p>
+                    </div>
+                    <div id={skl.box5} data-aos="zoom-in" className="skills-card" onClick={() => handleopen("https://render.com/")}  >
+                        <img src={render} alt="render-img" width="50px" className='skills-card-img' />
+                        <p className="skills-card-name"> Render </p>
                     </div>
                 </div>
             </div>
