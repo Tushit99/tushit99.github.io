@@ -1,4 +1,25 @@
 # Tushit Saxena Portfolio 
+ Welcome to my portfolio! This website showcases my projects and skills, and it's built using React and styled with Chakra UI. The site is fully responsive, ensuring an optimal viewing experience across different devices and screen sizes.
+ 
+ ## Live Demo
+
+Check out the live demo of my portfolio [tushit99.github.io/](tushit99.github.io/).
+
+## Technologies Used
+
+- React
+- Chakra UI
+- HTML
+- CSS
+- JavaScript 
+- emailJs 
+- SweetAlert
+
+## Features
+
+- Responsive design: The website is built to adapt to various screen sizes, providing a seamless experience for users on different devices.
+- Project showcase: Browse through my projects and get a glimpse of my skills and expertise.
+- Contact information: Find ways to get in touch with me, including my email and social media profiles. 
 
 
 ## Home Page
