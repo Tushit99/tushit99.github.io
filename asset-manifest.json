@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c24bf8ee.css",
-    "main.js": "/static/js/main.0148ee8a.js",
+    "main.js": "/static/js/main.2c56bd2c.js",
     "static/js/787.b4fd6981.chunk.js": "/static/js/787.b4fd6981.chunk.js",
     "static/media/sorting.png": "/static/media/sorting.9022bc2ba4eb2460e500.png",
     "static/media/helogin.png": "/static/media/helogin.8f4ccd3bd9826617b9a0.png",
@@ -14,7 +14,7 @@
     "static/media/jchome.png": "/static/media/jchome.575a48f96b2c19e09cbb.png",
     "static/media/sign.png": "/static/media/sign.19fbc73d5a8ce83464bf.png",
     "static/media/login.png": "/static/media/login.26448e9f42eec0de820f.png",
-    "static/media/resumeme.pdf": "/static/media/resumeme.462200e14f04b90c318e.pdf",
+    "static/media/resumeme.pdf": "/static/media/resumeme.9155a58dbea57c1e46a7.pdf",
     "static/media/jcrewhome.png": "/static/media/jcrewhome.8a97a9aca457c43ade9f.png",
     "static/media/cart.png": "/static/media/cart.b1235d42ec266ff0b4f8.png",
     "static/media/tushitgo.png": "/static/media/tushitgo.390036cb51103515d782.png",
@@ -36,11 +36,11 @@
     "static/media/jcrew.png": "/static/media/jcrew.9f8a26c97eb12b9967bf.png",
     "index.html": "/index.html",
     "main.c24bf8ee.css.map": "/static/css/main.c24bf8ee.css.map",
-    "main.0148ee8a.js.map": "/static/js/main.0148ee8a.js.map",
+    "main.2c56bd2c.js.map": "/static/js/main.2c56bd2c.js.map",
     "787.b4fd6981.chunk.js.map": "/static/js/787.b4fd6981.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c24bf8ee.css",
-    "static/js/main.0148ee8a.js"
+    "static/js/main.2c56bd2c.js"
   ]
 }
